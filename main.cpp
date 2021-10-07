@@ -47,7 +47,7 @@ int main()
 	cout << "decoded_str_file Size :: " << decoded_str_file.size();
 
 	ofstream fout("out.txt", ios::out | ios::binary);
- 	fout.write((char*)&decoded_str_file[0], decoded_str_file.size() * sizeof(decoded_str_file));
+ 	fout.write((char*)&decoded_str_file[0], decoded_str_file.size() * sizeof(uint8_t));
  	fout.close();
 
 	//std::ofstream output( "out.txt", std::ios::binary );
